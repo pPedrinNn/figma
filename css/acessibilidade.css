@@ -1,0 +1,104 @@
+/* ======================================================= */
+/* BARRA DE FERRAMENTAS DE ACESSIBILIDADE (MODIFICADA)      */
+/* ======================================================= */
+.acessibilidade-toolbar {
+    /* Posicionamento Fixo no Canto Superior Direito */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Garante que a barra fique sobre outros elementos */
+
+    /* Estilo */
+    background-color: rgba(240, 240, 240, 0.9); /* Fundo com leve transparência */
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: right;
+}
+
+.acessibilidade-toolbar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 3px; /* Espaçamento entre os botões */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.acessibilidade-toolbar button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ======================================================= */
+/* ESTILOS PARA O MODO DE ALTO CONTRASTE          */
+/* ======================================================= */
+body.alto-contraste {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Ajustes específicos para elementos em alto contraste */
+body.alto-contraste .container,
+body.alto-contraste .curso-card,
+body.alto-contraste .login-container,
+body.alto-contraste .info-box,
+body.alto-contraste .card,
+body.alto-contraste .header,
+body.alto-contraste .menu-item button {
+    background-color: #111 !important;
+    border: 1px solid #fff;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste p,
+body.alto-contraste label,
+body.alto-contraste a,
+body.alto-contraste span,
+body.alto-contraste strong {
+    color: #fff !important;
+}
+
+body.alto-contraste input,
+body.alto-contraste button,
+body.alto-contraste .login-button {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+body.alto-contraste .login-button a {
+   color: #fff !important;
+}
+
+
+/* ======================================================= */
+/* BOTÃO DE VOLTAR AO TOPO                 */
+/* ======================================================= */
+#btnVoltarTopo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#btnVoltarTopo:hover {
+    background-color: #0056b3;
+}

@@ -6,8 +6,17 @@
   <title>Cursos Disponíveis</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/cursos.css" />
+
+  <link rel="stylesheet" href="css/acessibilidade.css">
 </head>
 <body>
+  <div class="acessibilidade-toolbar">
+    <button id="aumentar-fonte" title="Aumentar Fonte">A+</button>
+    <button id="diminuir-fonte" title="Diminuir Fonte">A-</button>
+    <button id="fonte-padrao" title="Fonte Padrão">A</button>
+    <button id="contraste" title="Alto Contraste">Contraste</button>
+  </div>
+
   <div class="container">
     <header class="topo">
       <img src="images/v4_17.png" alt="Logo" class="logo" />
@@ -43,5 +52,20 @@
       <span class="texto-voltar"><a href="index.html" style="color: inherit; text-decoration: none; outline: none;">Voltar</a></span>
     </footer>
   </div>
+
+  <button id="btnVoltarTopo" title="Voltar ao topo">↑</button>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="js/acessibilidade.js"></script>
 </body>
 </html>
