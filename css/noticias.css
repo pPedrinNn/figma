@@ -80,6 +80,24 @@ body {
   background-color: #4FA7E3;
 }
 
+.button-box {
+  background: #6EC1FF;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.arrow {
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+}
+
 /* Responsivo */
 @media screen and (max-width: 600px) {
   .header h1 {
